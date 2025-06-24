@@ -1,9 +1,9 @@
 def reportar(historial, resumen, nombres):
     print("\n======= REPORTE GENERAL =======")
-    print(f"Total de Estudiantes Procesados: {resumen['total']}")
-    print(f"Estudiantes con promedio alto (≥17): {resumen['altos']}")
-    print(f"Estudiantes con promedio medio (13 a 16): {resumen['medios']}")
-    print(f"Estudiantes con promedio bajo (<13): {resumen['bajos']}")
+    print(f"Total de Estudiantes Procesados: {resumen['total']}")  #DICCIONARIO
+    print(f"Estudiantes con promedio alto (≥17): {resumen['altos']}")  #DICCIONARIO
+    print(f"Estudiantes con promedio medio (13 a 16): {resumen['medios']}")  #DICCIONARIO
+    print(f"Estudiantes con promedio bajo (<13): {resumen['bajos']}")  #DICCIONARIO
     print(f"Suma total de promedios finales: {round(resumen['suma_promedios'], 2)}")
 
     if resumen['total'] > 0:
@@ -18,5 +18,5 @@ def reportar(historial, resumen, nombres):
             print(f"   - {curso}: {nota}")
 
     print("\n======= NOMBRES DE ESTUDIANTE INGRESADOS =======")
-    for i, nombre in enumerate(nombres, start=1):
+    for i, nombre in enumerate(nombres, start=1):  #CONJUNTO
         print(f"{i}. {nombre}")
