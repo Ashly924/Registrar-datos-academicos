@@ -1,6 +1,6 @@
 def promedio_recursivo_guardado(n, i=1, lista=None):
-    if lista is None:
-        lista = []
+    if lista is None:  #LISTA
+        lista = []  #LISTA
 
     if i > n:
         return lista
@@ -9,4 +9,4 @@ def promedio_recursivo_guardado(n, i=1, lista=None):
     nota = float(input(f"Ingrese nota para '{nombre_curso}':\t"))
     lista.append((nombre_curso, nota))
 
-    return promedio_recursivo_guardado(n, i + 1, lista)
+    return promedio_recursivo_guardado(n, i + 1, lista)  #TUPLA
