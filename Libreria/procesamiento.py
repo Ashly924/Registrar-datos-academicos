@@ -22,10 +22,10 @@ def procesar(historial, resumen, nombres):
         else:
             resumen["bajos"] += 1
 
-        nombres.add(nombre)
+        nombres.add(nombre)  #CONJUNTO
 
-        estudiante = (nombre, promedio, bono, promedio_final, lista_cursos)
-        historial.append(estudiante)
+        estudiante = (nombre, promedio, bono, promedio_final, lista_cursos)  #LISTA
+        historial.append(estudiante)  #LISTA
 
         print("\n======= REPORTE DEL ESTUDIANTE =======")
         print(f"Nombre: {nombre}")
