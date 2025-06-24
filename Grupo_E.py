@@ -2,8 +2,8 @@ from Libreria.procesamiento import procesar
 from Libreria.reporte import reportar
 
 def ejecutar():
-    historial_estudiantes = []
-    resumen = {
+    historial_estudiantes = []  #LISTA
+    resumen = {  #DICCIONARIO
         "total": 0,
         "altos": 0,
         "bajos": 0,
